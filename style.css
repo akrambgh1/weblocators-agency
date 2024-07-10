@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Krona One", sans-serif;
+}
+
+:root{
+    --text: rgb(22, 22, 23);
+    --background: rgb(249, 249, 251);
+    --primary: rgb(50, 67, 154);
+    --secondary: rgb(123, 141, 234);
+    --accent: rgb(30, 56, 190);
+}
+
+body{
+    height: 400vh;
+    background-color: var(--background);
+    position: relative;
+}
+
+header{
+    width: 100%;
+    height: 8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+main{
+    height: 200vh;
+    position: relative;
+}
+
+.landing{
+
+}
+
+
+footer{
+    width: 100%;
+    position: absolute;
+    height: 45vh;
+    background-color: var(--secondary);
+    bottom: 0;
+}
