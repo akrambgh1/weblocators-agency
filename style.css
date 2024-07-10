@@ -24,7 +24,7 @@ body{
 }
 
 header{
-    width: 100vw;
+    width: 100%;
     height: 12rem;
     display: flex;
     align-items: center;
@@ -33,7 +33,7 @@ header{
     -webkit-user-drag: none;
 }
 header img{
-    height: 200%;
+    height: 150%;
     user-select: none;
     -webkit-user-drag: none;
 
