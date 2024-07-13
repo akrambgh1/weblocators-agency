@@ -347,7 +347,7 @@ opacity: 1;
 }
 }
 
-@media (max-width: 1000px){
+@media (max-width: 600px){
 
     body{
         height: 300vh;
