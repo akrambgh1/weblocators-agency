@@ -6,11 +6,11 @@
 }
 
 :root{
-    --text: rgb(22, 22, 23);
-    --background: rgb(249, 249, 251);
-    --primary: rgb(50, 67, 154);
-    --secondary: rgb(123, 141, 234);
-    --accent: rgb(30, 56, 190);
+    
+    --background: rgb(247, 247, 247);
+    --primary: rgb(238, 238, 238);
+    --secondary: rgb(57, 62, 70);
+    --accent: rgb(146, 154, 171);
 }
 head title{
     font-family: "Krona One", sans-serif;
@@ -18,44 +18,406 @@ head title{
     color: rgb(0, 0, 0);
 }
 body{
-    height: 400vh;
-    background-color: var(--background);
     position: relative;
+    background: var(--background);
 }
 
 header{
-    width: 100%;
-    height: 12rem;
     display: flex;
     align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 2rem 6rem ;
+
+    height: 10vh;
+}
+header h1{
+    height: 100%;
+    
+    padding: 20px;
+    color: var(--secondary);
+    margin-right: 8rem;
+    user-select: none;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+}
+
+.links{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contact{
+    width: 100%;
+}
+
+.contact span{
+    float: right;
+    width: 200px;
+    padding: 1rem;
+    border: 1px solid var(--secondary);
+    border-radius: 1rem;
+    color: var(--secondary);
+    display: flex;
     justify-content: center;
-    user-select: none;
-    -webkit-user-drag: none;
 }
-header img{
-    height: 150%;
-    user-select: none;
-    -webkit-user-drag: none;
 
+header a{
+    color: var(--secondary);
+    text-decoration: none;
+    width: 9rem;
 
 }
+
+
 
 
 
 main{
     height: 200vh;
-    position: relative;
+    position: absolute;
 }
 
 .landing{
-
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9rem;
+    background-color: var(--background);
+    height: 90vh;
 }
 
 
-footer{
+.landing h1 span{
+    color: var(--accent);
+}
+
+
+.one{
+    color: var(--secondary);
+    font-size: 5rem;
+    width: 40rem;
+    animation-name: title;
+    position: relative;
+    animation-duration: 2s;
+    opacity: 100%;
+    padding-left: 4rem;
+}
+
+.paragraph{
+    color: var(--secondary);
+    font-size: 1.2rem;
+    width: 45rem;
+    font-weight: lighter;
+    animation-name: paragraph;
+    position: relative;
+    animation-duration: 2s;
+    opacity: 100%;
+    line-height: 200%;
+    position: relative;
+    margin-top: 40px;
+}
+
+.line{
+    width: 60px;
+    border-top: 4px solid var(--secondary);
+    height: 10px;
+    position: relative;
+    animation-name: line;
+    animation-duration: 2s;
+
+}
+
+.Trusted{
+    color: var(--accent);
+    animation-name: Trusted ;
+    animation-duration: 2s;
+    position: relative;
+}
+@keyframes title{
+    from{left: -90rem; opacity: 0%;}
+    to{ left: 0rem; opacity: 100%;} 
+    
+}
+
+@keyframes paragraph {
+    from{left: -80rem; opacity: 0%;}
+    to{left: 0; opacity: 100%;}
+}
+
+@keyframes line {
+
+    from{left: -80rem; opacity: 0%;}
+    to{left: 0; opacity: 100%;}
+    
+}
+
+@keyframes Trusted {
+
+    from{left: -80rem; opacity: 0%;}
+    to{left: 0; opacity: 100%;}
+    
+}
+.about{
+    background-color: var(--primary);
+    height: 100vh;
     width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 8rem;
+    gap: 14rem;
+}
+
+.build{
+    height: auto;
+    position: relative;
+    top: -2rem;
+    animation-name: build;
+    animation-timeline : view();
+    animation-range-start: cover 0%;
+    animation-range-end: cover 50%;
+}
+@keyframes build {
+    from {
+        left: -20rem;
+        opacity: 0;
+        }
+        
+        
+        to {
+        left: 0rem;
+        opacity: 1;
+        }
+}
+
+.two{
+    font-size: 3rem;
+    color: rgb(0, 0, 0);
+    width: 40rem;
+    position: relative;
+    animation-duration: 1.5s;
+    opacity: 100%;
+    margin-top: 40px;
+}
+
+.second{
+    animation-name: none;
+}
+
+
+.skills{
+    width: 37.5rem;
+    height: 30rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2rem;
+    position: relative;
+    top: 2rem;
+    animation-name: skills;
+    animation-timeline : view();
+    animation-range-start: cover 0%;
+    animation-range-end: cover 60%;
+
+}
+@keyframes skills {
+    from {
+        left: -20rem;
+        opacity: 0;
+        }
+        
+        
+        to {
+        left: 0rem;
+        opacity: 1;
+        }
+}
+
+.skill{
+    display: flex;
+    gap: 2rem;
+}
+
+.subtitle{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.subtitle h2{
+    color: #000000;
+}
+
+.icon{
+    font-size: 5rem;
+}
+
+
+.ratings{
+    background-color: var(--primary);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 6rem;
+    padding: 6rem 6rem 0rem 6rem;
+}
+
+.three{
+    color: var(--secondary);
+    font-size: 2.8rem;
+    text-align: center;
+    position: relative;
+    animation-duration: 1.5s;
+    opacity: 100%;
+}
+
+
+.comments{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    gap: 2rem;      
+    height: 25rem;
+    width: 80%;
+    color: ;
+}
+
+.comment{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    align-items: center;
+    position: relative;
+}
+
+.comment h4{
+    color: var(--accent);
+}
+
+
+.comment img{
+    width: 5rem;
+    height: 4rem;
+    border-radius: 50%;
+}
+
+.comment i{
     position: absolute;
-    height: 45vh;
-    background-color: var(--secondary);
-    bottom: 0;
+    font-size: 7rem;
+    z-index: 0;
+    top: -4rem;
+}
+
+.book{
+    width: 100%;
+    height: 35vh;
+    background-color: rgb(241, 241, 241);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.book h1{
+    font-size: 3.5rem;
+    color: rgb(0, 0, 0);
+    animation-name: slide;
+    position: relative;
+    animation-timeline : view();
+    animation-range-start: cover 0%;
+    animation-range-end: cover 50%;
+}
+
+.book span{
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    width: 200px;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 14px;
+    color: rgb(0, 0, 0);
+}
+
+
+
+
+@keyframes slide {
+from {
+left: -20rem;
+opacity: 0;
+}
+
+
+to {
+left: 0rem;
+opacity: 1;
+}
+}
+
+@media (max-width: 1000px){
+
+    body{
+    }
+    .landing{
+        flex-direction: column;
+    }
+
+    .about{
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        height: 60vh;
+        gap: 1rem;
+    }
+    header{
+        padding: 2rem 1rem;
+    }
+    .comments{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        gap: 5rem;
+    }
+
+    .ratings{
+        height: 70vh;
+        justify-content: start;
+    }
+
+    .skills{
+        align-items: start;
+    
+    }
+    .skill{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .one{
+        padding-left: 2rem;
+    }
+
+    .two{
+        padding-left: 2rem;
+        text-align: center;
+    }
+
+    .second{
+       left: 50%;
+    }
+
+    .book{
+        flex-direction: column;
+        height: 15vh;
+    }
+
 }
