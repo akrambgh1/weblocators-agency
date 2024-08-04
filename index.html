@@ -62,7 +62,7 @@
         <div class="skills">
           <div class="experince skill">
             <div class="icon">
-              <i class="bx bxs-group"></i>
+              <i class='bx bxs-window-alt'></i>
             </div>
 
             <div class="subtitle">
@@ -140,10 +140,7 @@
       </section>
 
       <section class="contact_us">
-        <form
-          class="contact"
-          action="https://api.web3forms.com/submit"
-          method="POST">
+        <form method="POST" id="form">
           <input
             type="hidden"
             name="access_key"
@@ -161,7 +158,8 @@
             name="message"
             placeholder="Write your message"
             required></textarea></div>
-          <button class="submit" type="submit">Contact us</button>
+          <button id="spam" class="submit" type="submit">Contact us</button>
+          <div id="result"></div>
           
         </form>
         <section class="get-started">

@@ -19,6 +19,7 @@ head title {
 body {
   position: relative;
   background: var(--background);
+  
 }
 
 header {
@@ -62,6 +63,7 @@ header h1 {
   color: var(--secondary);
   display: flex;
   justify-content: center;
+  cursor: pointer;
 }
 
 header a {
