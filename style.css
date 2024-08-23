@@ -17,15 +17,13 @@ head title {
   color: rgb(0, 0, 0);
 }
 body {
-  position: relative;
   background: var(--background);
-  
 }
 
 header {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
   width: 100%;
   padding: 2rem 6rem;
   height: 10vh;
@@ -37,25 +35,9 @@ header h1 {
   color: var(--secondary);
   margin-right: 8rem;
   user-select: none;
-}
+} 
 
-.navbar {
-  display: flex;
-  align-items: center;
-}
-
-.links {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.contact {
-  width: 100%;
-}
-
-.contact span {
-  float: right;
+#mybutton {
   width: 200px;
   padding: 1rem;
   border: 1px solid var(--secondary);
@@ -80,7 +62,7 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 9rem;
+  gap: 15rem;
   background-color: var(--background);
   height: 90vh;
 }
@@ -114,14 +96,7 @@ main {
   margin-top: 40px;
 }
 
-.line {
-  width: 60px;
-  border-top: 4px solid var(--secondary);
-  height: 10px;
-  position: relative;
-  animation-name: line;
-  animation-duration: 2s;
-}
+
 
 .Trusted {
   color: var(--accent);
@@ -151,16 +126,7 @@ main {
   }
 }
 
-@keyframes line {
-  from {
-    left: -80rem;
-    opacity: 0%;
-  }
-  to {
-    left: 0;
-    opacity: 100%;
-  }
-}
+
 
 @keyframes Trusted {
   from {
@@ -175,21 +141,30 @@ main {
 .about {
   background-color: var(--primary);
   height: auto;
+  color: var(--secondary);
   width: 100%;
   display: flex;
   justify-content: center;
   padding-top: 8rem;
-  gap: 14rem;
+  gap: 15rem;
   padding-top: 2rem;
   padding-bottom: 2rem;
+}
+.two {
+  font-size: 3rem;
+  
+  width: 40rem;
+  position: relative;
+  animation-duration: 1.5s;
+  opacity: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .build {
   height: auto;
   animation-name: build;
   animation-timeline: view();
-  animation-range-start: cover 0%;
-  animation-range-end: cover 50%;
   position: relative;
 }
 @keyframes build {
@@ -203,19 +178,8 @@ main {
   }
 }
 
-.two {
-  font-size: 3rem;
-  color: rgb(0, 0, 0);
-  width: 40rem;
-  position: relative;
-  animation-duration: 1.5s;
-  opacity: 100%;
-  margin-top: 40px;
-}
 
-.second {
-  animation-name: none;
-}
+
 
 .skills {
   width: 37.5rem;
@@ -227,8 +191,7 @@ main {
   position: relative;
   animation-name: skills;
   animation-timeline: view();
-  animation-range-start: cover 0%;
-  animation-range-end: cover 60%;
+
 }
 @keyframes skills {
   from {
@@ -336,6 +299,7 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: start;
+  width: 50%;
   align-items: center;
 }
 .get-started h1 {
@@ -350,7 +314,7 @@ main {
   text-align: center;
   margin-bottom: 1rem;
 }
-.submit{
+.submit {
   width: 200px;
   padding: 1rem;
   border: 1px solid var(--secondary);
@@ -362,37 +326,42 @@ main {
 }
 .contact_us {
   padding: 2rem;
-  position: relative;
+  justify-content: space-between;
   display: flex;
   gap: 2rem;
   background-color: var(--primary);
-  height: 100vh;
+  height: auto;
   flex-direction: row;
 }
-.contact{
-    display: flex;
-    flex-direction: column;
-    gap: .5rem;
-    align-items: center;
-  
+.contact {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 100%;
+  align-items: center;
 }
-.contact div{
-   display: flex;
-   justify-content: center;
-   flex-direction: column;
-   width: 100%;
-   gap: .5rem;
-   padding: 1rem;
+.contact div {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  gap: 1rem;
+  padding: 1rem;
+}label{
+  margin: 1rem;
 }
-textarea{
-    width: 100%;
-    padding: 1rem;
-    height: 15rem;
-    border: 1px solid var(--secondary);
-    border-radius: 1rem;
-    margin-bottom: 1rem;    
+form{
+  width: 50%;
 }
-input{
+textarea {
+  width: 100%;
+  padding: 1rem;
+  height: 15rem;
+  border: 1px solid var(--secondary);
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+}
+input {
   width: 100%;
   padding: 1rem;
   border: 1px solid var(--secondary);
@@ -400,13 +369,13 @@ input{
   margin-bottom: 1rem;
 }
 
-
-@media (max-width: 1000px) {
+@media (max-width: 1200px) {
   body {
     height: auto;
   }
   .landing {
     flex-direction: column;
+    height: 100vh;
   }
 
   .about {
@@ -418,41 +387,20 @@ input{
     padding-top: 2rem;
     padding-bottom: 2rem;
   }
-  header {
-    padding: 2rem 1rem;
-  }
-  .comments {
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    gap: 5rem;
-  }
-
-  .skills {
-    align-items: start;
-  }
-  .skill {
-    display: flex;
+   .book{
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
+   }
+   .book .left ,.book .right{
+    width: 100%;
+   }
+   .contact_us {
+   flex-direction: column-reverse;
+   }
+   .contact_us section,
+   form{
+    width: 100%;
+   }
 
-  .one {
-    padding-left: 2rem;
-  }
 
-  .two {
-    padding-left: 2rem;
-    text-align: center;
-  }
 
-  .second {
-    left: 50%;
-  }
-
-  .book {
-    flex-direction: column;
-    height: 15vh;
-  }
 }
